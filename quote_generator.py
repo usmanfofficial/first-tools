@@ -15,8 +15,7 @@ def get_quote():
     # Use random.choice() to pick a random quote from the quotes list
     return random.choice(quotes)
 
-# Main execution block
-if __name__ == "__main__":
+def main():
     # Print a random quote when the script is run directly
     print(get_quote())
 
@@ -24,12 +23,14 @@ if __name__ == "__main__":
     while True:
         user_input = input("Would you like another quote? (yes/no): ").strip().lower()
         if user_input == 'yes':
-            # Print another random quote
             print(get_quote())
         elif user_input == 'no':
-            # Exit the program if the user says no
             print("Thank you for using the quote generator. Have a great day!")
             break  # Break the loop to end the program
         else:
             # If the user input is invalid, ask again
             print("Please enter 'yes' or 'no'.")
+
+# Main execution block
+if __name__ == "__main__":
+    main()
