@@ -18,10 +18,10 @@ def main(): # defined main
         a = float(input("Enter first number: "))
         b = float(input("Enter second number: "))
         
-        print(f"Sum: {add(a, b)}")
-        print(f"Difference: {subtract(a, b)}")
-        print(f"Product: {multiply(a, b)}")
-        print(f"Quotient: {divide(a, b)}")
+        print(f"Sum: {add(a, b)}") # prints sum
+        print(f"Difference: {subtract(a, b)}") # prints the difference
+        print(f"Product: {multiply(a, b)}") # prints the product
+        print(f"Quotient: {divide(a, b)}") # prints the quotient
     except ValueError:
         print("Error: Invalid input. Please enter numeric values.")
 
