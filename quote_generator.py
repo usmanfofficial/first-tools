@@ -9,8 +9,6 @@ quotes = [
     "Hardships often prepare ordinary people for an extraordinary destiny.",  # Quote by C.S. Lewis
     "Dream big and dare to fail.",  # Quote by Norman Vaughan
     "Opportunities don't happen, you create them."  # Quote by Chris Grosser
-    "If you have a one percent chance, try 100 times.” # Quote by Saygin Yalcin "
-
 ]
 
 def get_quote():
@@ -21,3 +19,17 @@ def get_quote():
 if __name__ == "__main__":
     # Print a random quote when the script is run directly
     print(get_quote())
+
+    # Asking the user if they want another quote
+    while True:
+        user_input = input("Would you like another quote? (yes/no): ").strip().lower()
+        if user_input == 'yes':
+            # Print another random quote
+            print(get_quote())
+        elif user_input == 'no':
+            # Exit the program if the user says no
+            print("Thank you for using the quote generator. Have a great day!")
+            break  # Break the loop to end the program
+        else:
+            # If the user input is invalid, ask again
+            print("Please enter 'yes' or 'no'.")
