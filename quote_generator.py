@@ -12,3 +12,8 @@ quotes = [
     "If you have a one percent chance, try 100 times.” # Quote by Saygin Yalcin "
 
 ]
+
+def get_quote():
+    # Use random.choice() to pick a random quote from the quotes list
+    return random.choice(quotes)
+
