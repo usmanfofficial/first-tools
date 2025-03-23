@@ -17,3 +17,7 @@ def get_quote():
     # Use random.choice() to pick a random quote from the quotes list
     return random.choice(quotes)
 
+# Main execution block
+if __name__ == "__main__":
+    # Print a random quote when the script is run directly
+    print(get_quote())
