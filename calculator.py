@@ -44,4 +44,19 @@ def calculator():
             a = float(input("\nEnter the first number: "))
             b = float(input("Enter the second number: "))
             
-           
+            if choice == 1:
+                result = add(a, b)
+                display_result("Sum", result)
+            elif choice == 2:
+                result = subtract(a, b)
+                display_result("Difference", result)
+            elif choice == 3:
+                result = multiply(a, b)
+                display_result("Product", result)
+            elif choice == 4:
+                result = divide(a, b)
+                display_result("Quotient", result)
+            else:
+                print("Invalid choice. Please try again.")
+        
+
