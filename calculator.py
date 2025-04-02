@@ -41,3 +41,7 @@ def calculator():
                 print("\nThanks for using CoolCalc! Goodbye!")
                 break
             
+            a = float(input("\nEnter the first number: "))
+            b = float(input("Enter the second number: "))
+            
+           
