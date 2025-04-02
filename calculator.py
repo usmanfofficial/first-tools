@@ -33,4 +33,11 @@ def calculator():
         print("3. Multiply (x)")
         print("4. Divide (/)")
         print("5. Exit")
-
+        
+        try:
+            choice = int(input("\nChoose an operation (1/2/3/4/5): "))
+            
+            if choice == 5:
+                print("\nThanks for using CoolCalc! Goodbye!")
+                break
+            
