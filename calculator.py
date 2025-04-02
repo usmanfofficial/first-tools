@@ -15,6 +15,11 @@ def divide(x, y):
         return "Error: Division by zero"
     return x / y
 
+def display_result(operation, result):
+    print(f"\n{operation} Result: {result}")
+
+
+
 def main(): # defined main
     print("Simple Calculator")
     try:
