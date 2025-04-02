@@ -20,6 +20,12 @@ def display_result(operation, result):
 
 
 
+def calculator():
+    print("\n-------------------------")
+    print("    Welcome to CoolCalc!")
+    print("-------------------------")
+    
+
 def main(): # defined main
     print("Simple Calculator")
     try:
