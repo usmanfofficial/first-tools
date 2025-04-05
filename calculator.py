@@ -69,5 +69,5 @@ def calculator():
         except ValueError:
             print("\nError: Invalid input. Please enter numeric values.")
 
-if __name__ == "__main__":
+if __name__ == "__main__": # Added main guard
     calculator()
