@@ -10,6 +10,9 @@ def add(a: Number, b: Number) -> Number:
 def sub(a: Number, b: Number) -> Number:
     return a - b
 
+def mul(a: Number, b: Number) -> Number:
+    return a * b
+
 if __name__ == "__main__":
     import sys
     if len(sys.argv) == 3:
