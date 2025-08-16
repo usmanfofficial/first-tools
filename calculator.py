@@ -22,6 +22,11 @@ def pow_(a: Number, b: Number) -> Number:
     # exponentiation as a named function (avoid overriding built-in pow)
     return a ** b
 
+def avg(*values: Number) -> Number:
+    if not values:
+        raise ValueError("avg() requires at least one value")
+    return sum(values) / len(values)
+
 if __name__ == "__main__":
     import sys
     if len(sys.argv) == 3:
