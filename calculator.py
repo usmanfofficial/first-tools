@@ -18,6 +18,10 @@ def div(a: Number, b: Number) -> Number:
         raise ZeroDivisionError("Cannot divide by zero")
     return a / b
 
+def pow_(a: Number, b: Number) -> Number:
+    # exponentiation as a named function (avoid overriding built-in pow)
+    return a ** b
+
 if __name__ == "__main__":
     import sys
     if len(sys.argv) == 3:
