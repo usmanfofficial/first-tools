@@ -7,8 +7,8 @@ Number = Union[int, float]
 def add(a: Number, b: Number) -> Number:
     return a + b
 
-def add(a, b):
-    return a + b
+def sub(a: Number, b: Number) -> Number:
+    return a - b
 
 if __name__ == "__main__":
     import sys
