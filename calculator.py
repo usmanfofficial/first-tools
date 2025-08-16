@@ -13,6 +13,11 @@ def sub(a: Number, b: Number) -> Number:
 def mul(a: Number, b: Number) -> Number:
     return a * b
 
+def div(a: Number, b: Number) -> Number:
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return a / b
+
 if __name__ == "__main__":
     import sys
     if len(sys.argv) == 3:
