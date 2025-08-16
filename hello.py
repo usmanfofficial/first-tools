@@ -1,12 +1,5 @@
-def greet(name):
-    """
-        Gretting user with personalised message
-    """
-    return f"Hello, {name}! Welcome to my first GitHub repo."
-
-def main():
-    user = input("Enter your name: ")
-    print(greet(user))
+from quote_generator import get_random_quote
 
 if __name__ == "__main__":
-    main()
+    print("Hey — welcome to First Tools!")
+    print(get_random_quote())
