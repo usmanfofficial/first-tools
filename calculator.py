@@ -1,3 +1,12 @@
+"""Tiny calculator utilities with a simple CLI."""
+
+from typing import Union
+
+Number = Union[int, float]
+
+def add(a: Number, b: Number) -> Number:
+    return a + b
+
 def add(a, b):
     return a + b
 
