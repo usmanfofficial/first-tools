@@ -7,3 +7,5 @@ def mark_done(task_id):
             t.done = True
     storage.save_tasks(tasks)
 
+def list_tasks(filename="tasks.json"):
+    return storage.load_tasks(filename)
