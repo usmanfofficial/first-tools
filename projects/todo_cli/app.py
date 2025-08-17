@@ -18,3 +18,6 @@ def main():
         for t in tasks:
             mark = "[x]" if t.done else "[ ]"
             print(f"{mark} {t.id}: {t.title}")
+if __name__ == "__main__":
+    main()
+# MAIN GUARD
