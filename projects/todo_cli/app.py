@@ -18,6 +18,14 @@ def main():
         for t in tasks:
             mark = "[x]" if t.done else "[ ]"
             print(f"{mark} {t.id}: {t.title}")
+    elif cmd == "done":
+        if len(sys.argv) < 3:
+            print("Usage: python app.py done <id>")
+            return
+        task_id = int(sys.argv[2])
+        core.mark_done(task_id)
+        print(f"Task {task_id} marked done")
+    
 if __name__ == "__main__":
     main()
 # MAIN GUARD
